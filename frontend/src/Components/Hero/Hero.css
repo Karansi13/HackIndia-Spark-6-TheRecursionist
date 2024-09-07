@@ -1,0 +1,114 @@
+.hero__section {
+    background: #333;
+    color: white;
+    padding: 80px 0; 
+}
+
+.hero__content {
+    padding-top: 100px; 
+    padding-bottom: 100px;
+}
+
+.hero__content h2 {
+    line-height: 1.2;
+    font-size: 2rem; 
+}
+
+.hero__content h2 span {
+    background: linear-gradient(-45deg, #e5ace6, #6e72e0, #e1aee2, #6368eb);
+    background-size: 100% 100%;
+    background-clip: text;
+    -webkit-text-stroke: 3px transparent;
+    -webkit-text-fill-color: #14141f;
+    margin-left: 7px !important;
+    display: inline-block;
+    font-size: 2.2rem; 
+}
+
+.hero__btn {
+    margin-top: 30px; 
+}
+
+.explore__btn, 
+.create__btn {
+    border: none;
+    outline: none;
+    padding: 7px 25px !important;
+    border-radius: 50px !important;
+    border: 1px solid #5142fc !important;
+    font-size: 0.9rem;
+    background: transparent;
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.explore__btn a, 
+.create__btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero__btns button:hover {
+    color: #e5ace6;
+    background-color: #5142fc; 
+}
+
+.hero__img {
+    width: 100%; 
+    max-width: 500px;
+    margin: 0 auto; 
+}
+
+.ntfimg {
+    padding-top: 40px; 
+    width: 100%; 
+}
+
+@media screen and (max-width: 768px) {
+    .hero__content {
+        padding-top: 50px; 
+        padding-bottom: 50px;
+    }
+
+    .hero__content h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero__content h2 span {
+        font-size: 2rem;
+    }
+
+    .ntfimg {
+        padding-top: 30px; 
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero__content {
+        padding-top: 30px; 
+        padding-bottom: 30px;
+        text-align: center; 
+    }
+
+    .hero__content h2 {
+        font-size: 1.5rem; 
+        line-height: 1.2; 
+    }
+
+    .hero__content h2 span {
+        font-size: 1.8rem; 
+    }
+
+    .hero__btns {
+        flex-direction: column; 
+        gap: 15px; 
+    }
+
+    .hero__img {
+        margin-top: 20px; 
+    }
+
+    .ntfimg {
+        padding-top: 20px; 
+    }
+}

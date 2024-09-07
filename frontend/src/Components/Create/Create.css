@@ -1,0 +1,65 @@
+.form_input_all{
+    padding-top: 200px;  
+}
+
+.form__input input{
+    width: 100%;
+    padding: 7px 25px;
+    color: #040404;
+    font-size: 0.8rem;
+    background: transparent;
+    border: 1px solid;
+    outline: none;
+    border-radius:  5px;
+}
+
+.form__input{
+    margin-bottom: 15px;
+}
+
+.form__input label{
+    color: #080808;
+    margin-bottom: 10px;
+}
+.form__input .upload__input{
+    padding: 50px 25px;
+}
+::-webkit-calendar-picker-indicator{
+    filter: invert(1); /* Invert colors to make the icon black */
+    cursor: pointer;
+    border: 1px solid #040404;
+}
+
+.custom-date-input {
+    position: relative;
+}
+
+.datepicker-custom {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #040404;
+    border-radius: 4px;
+    padding-right: 2rem; /* Space for the icon */
+}
+
+.calendar-icon {
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.btn-submit
+{
+    background: #333;
+color: white;
+border-style: outset;
+border-color: #333;
+height: 40px;
+width: 150px;
+font: bold15px arial,sans-serif;
+text-shadow: none;
+border-radius: 30px;
+}

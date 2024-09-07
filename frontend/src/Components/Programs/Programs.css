@@ -1,0 +1,77 @@
+.programs {
+    margin: 80px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; /* Add spacing between programs */
+}
+
+.program {
+    flex-basis: 31%;
+    position: relative;
+    overflow: hidden; /* Ensure content doesn't overflow */
+    border-radius: 15px; /* Softer edges */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.program img {
+    width: 100%;
+    display: block;
+    border-radius: 15px; /* Match border-radius with container */
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect on hover */
+}
+
+.program:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.caption {
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    opacity: 0;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark overlay */
+    transition: opacity 0.4s, background-color 0.4s, padding-top 0.4s; /* Smooth transitions */
+}
+
+.caption img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.caption p {
+    font-size: 1.1rem; /* Increase font size for readability */
+    font-weight: 500; /* Make the text more prominent */
+    text-align: center; /* Center align the text */
+    margin: 0; /* Remove default margin */
+    letter-spacing: 1px; /* Add letter spacing for modern look */
+}
+
+.program:hover .caption {
+    opacity: 1;
+    padding-top: 0;
+    background-color: rgba(0, 0, 0, 0.85); /* Darken the overlay on hover */
+}
+
+@media screen and (max-width: 768px) {
+    .programs {
+        flex-direction: column; /* Stack programs vertically on smaller screens */
+        align-items: center;
+    }
+
+    .program {
+        width: 80%; /* Adjust width for smaller screens */
+        margin-bottom: 20px; /* Add spacing between stacked programs */
+    }
+}

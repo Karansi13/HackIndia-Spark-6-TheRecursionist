@@ -1,0 +1,41 @@
+/* Custom CSS for Toastr notifications */
+.toast {
+    border-radius: 8px;
+    font-family: 'Arial', sans-serif;
+    padding: 15px;
+  }
+  
+  .toast-success {
+    background-color: #4CAF50; /* Green for success */
+    color: black;
+  }
+  
+  .toast-error {
+    background-color: #f44336; /* Red for errors */
+    color: black;
+  }
+  
+  .toast-info {
+    background-color: #2196F3; /* Blue for info */
+    color: black;
+  }
+  
+  .toast-warning {
+    background-color: #FFC107; /* Yellow for warnings */
+    color: black;
+  }
+  
+  .toast-title {
+    font-weight: bold;
+  }
+  
+  .toast-message {
+    font-size: 15px;
+    color: black;
+  }
+  
+  .toast-close-button {
+    color: black;
+    font-size: 16px;
+  }
+  

@@ -1,0 +1,153 @@
+.modal__wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 20, 31, 0.8); /* Slightly more transparent for a smoother overlay */
+    z-index: 4444444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.single__modal {
+    position: relative;
+    width: 500px;
+    max-width: 90%;
+    height: auto; /* Auto height to fit content */
+    max-height: 80%;
+    overflow-y: auto; /* Scroll if content exceeds max-height */
+    background: linear-gradient(145deg, #0e0e10, #1a1a1d);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5); /* Soft shadow */
+    z-index: 5555555;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.single__modal h6 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+.single__modal .moneyBidder,
+.accountBidder {
+    color: #47f530;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.input__item input {
+    width: 100%;
+    border: 1px solid #2a2a35;
+    background: #1a1a1d;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.input__item input:focus {
+    border-color: #47f530; /* Green border on focus */
+}
+
+.place__bid-btn {
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    width: 100%;
+    background: linear-gradient(145deg, #5142fc, #7289da);
+    color: #fff;
+    border-radius: 30px;
+    font-size: 1rem;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.place__bid-btn:hover {
+    background: linear-gradient(145deg, #7289da, #5142fc);
+}
+
+.TitleModal {
+    color: #aaa;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.close__modal {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    z-index: 666666;
+    cursor: pointer;
+}
+
+.close__modal i {
+    padding: 8px;
+    background-color: #5142fc;
+    color: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.close__modal i:hover {
+    background-color: #7289da;
+}
+
+.bidder-information {
+    border-bottom: 1px solid #2a2a35;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.account, .money {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.error-message {
+    color: #ff4d4d;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.btn-refresh {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background: #2a2a35;
+    border: 1px solid #47f530;
+    color: #47f530;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-refresh:hover {
+    background: #47f530;
+    color: #000;
+}
+
+.loading-spinner {
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    border-top: 3px solid #47f530;
+    width: 16px;
+    height: 16px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

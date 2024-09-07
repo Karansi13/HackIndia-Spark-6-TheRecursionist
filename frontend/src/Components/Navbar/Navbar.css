@@ -1,0 +1,134 @@
+nav {
+    width: 100%;
+    background: #333;
+    color: #fff;
+    padding: 4px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 320px;
+    height: 120px;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    font-size: 16px;
+}
+
+li {
+    cursor: pointer;
+}
+
+li:hover {
+    color: #e5ace6;
+}
+
+.btn {
+    color: black;
+    background-color: white;
+    margin-left: 10px;
+}
+
+.custom-link {
+    text-decoration: none; 
+    color: inherit;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .hamburger {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        font-size: 14px;
+    }
+
+    .btn {
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-toggle.open .hamburger:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-toggle.open .hamburger:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.open .hamburger:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}
